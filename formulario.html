@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>formulario</h1>
+
+    <button onclick="alert('clic')">enviar</button>
+
+    <!--creamos un formulario, la etiqueta form sirve para crear formulario-->
+    <form method="" action="" enctype="multipart/form-data">
+
+        <!--la etiqueta label sirve para poner nombre a las etiquetas del input-->
+        <!--la etiqueta input sirve para crear entradas para texto o numeros-->
+        <label for="name">name</label>
+        <input id="name" type="text" placeholder="write your mane" name="name">
+        <!--para la entrada de numeros se utiliza el tipo number solo para numeros-->
+        <label for="number">number</label>
+        <input type="number" id="number" placeholder="write your number" name="number">
+        <!--entrada de tipo contraseña -->
+        <label for="password">password</label>
+        <input type="password" id="password" placeholder="write your password">
+        <label for="date">date</label>
+        <input type="date" id="date" placeholder="write your date">
+        <label for="tim">time</label>
+        <input type="time" placeholder="write your tine">
+
+        <div>
+            <!--br sirve para saltos de linea-->
+            <br>
+            <label for="name">photo</label>
+            <!--la etrada de tipo file sirve para seleccionar un archivo desde el pc local-->
+            <input type="file" placeholder="save you pictute" multiple="true">
+        </div>
+
+
+        <!--la etiqueta de tipo checkbox sirve para crear cuadro para marcar-->
+        <h3>gustos</h3>
+        <label for="">
+            cocinar<input type="checkbox">
+        </label>
+        <label for="">
+            ver netflix<input type="checkbox">
+        </label>
+
+        <!--la etiqueta de tipo radio sirve para marcar de tipo redondo-->
+        <h3>sexo</h3>
+        <label for="">
+            <input type="radio" name="sexo"> hombre
+        </label>
+
+        <label for="">
+            <input type="radio" name="sexo"> mujer
+        </label>
+
+        <h3>mensaje</h3>
+        <textarea name="" id="" cols="70" rows="4"></textarea>
+    </form>
+</body>
+</html>
