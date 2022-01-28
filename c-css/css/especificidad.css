@@ -1,0 +1,26 @@
+/*
+cada uno de los estilos para llamar se realizan por medio de rangon del 1 al 5
+donde el que tiene mayor rango es el estilo q va a estar vigente dentro de los estilos
+*/
+
+/*estilo con clases rango 4*/
+.especificidad {
+
+    color: red 
+}
+
+/*estilo con id rango 3*/
+#especificidad {
+
+    color: green 
+}
+
+/*estilo con pseudo-clases rango 4*/
+[especificidad="especificidad"] {
+
+    color: yellow
+}
+/*estilo con !imporyant rango 1 */
+h1 {
+    color: grey !important
+}

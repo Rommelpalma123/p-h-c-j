@@ -1,0 +1,78 @@
+/*            UNIVERSAL 
+el signo * se lo conoce como universal, sirve para todas las etiquetas del html
+
+* {
+    color: red;
+}
+*/          
+
+/*            TIPO     
+eixste tambine para llamar en css el cual es por tipo es decir si eleccionamon un h1, h2 solo se vera 
+afectada esa etiqueta
+
+h1 {
+    color: red;
+}
+*/
+
+
+/*            CLASES    
+eixste tambine para llamar en css el cual es por clases, donde en la etiqueta html se agrega 
+un class y se se pone un nombre 
+
+.titulo-h1 {
+    color: red;
+}
+*/
+
+
+
+/*            ID
+existe tambien para llamar en css el cual es por id, donde en la etiqueta html se agrega 
+un id y se se pone un nombre 
+
+#titulo-h1 {
+    color: red;
+}
+*/
+
+
+/*            DESENDIENTES 
+existe tambien para llamar en css el cual es desendiente, donde en la etiqueta html se agrega 
+un class y se se pone un nombre seguido de otra eqtiqueta 
+
+/*de esta manera podemos afectar a un serie de etiquetas*/
+
+/*en este caso estamos utilizando 3 etiquetas lo que hace se marquen en 2 colores diferentes
+
+.clase1 p {
+    color: pink;
+}
+
+.clase1 p span {
+    color: red;
+}
+*/
+
+/*              seudo-clases
+el hover sirve, cuenado se pase el cursor se cambie de color el texto
+
+.clase1 p:hover {
+    color: red;
+}
+*/
+
+/*           ESPECIFICIDAD
+
+
+*/
+
+
+
+
+
+
+
+
+
+

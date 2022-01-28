@@ -1,0 +1,7 @@
+/*
+con el --active se puede cambiar un solo elemento es decir q sea diferente del resto
+*/
+.contact-form__input--active{
+
+    color: aqua
+}
