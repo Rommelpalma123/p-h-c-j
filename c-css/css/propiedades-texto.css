@@ -1,0 +1,26 @@
+*{
+    /*tipo de letra q se va a utilizar*/
+    font-family: Georgia;
+    font-weight: 5000;
+}
+
+
+
+/*
+                fuente de para letras o tipalogia
+*/
+.div-form {
+
+    /*sirve para tamoño de letra*/
+    font-size: 25px;
+}
+
+.div-form__h2 {
+
+    font-size: 2em;
+    /*line- height nace desde el centro es dicir cubre una parte hacia el lado de arriba 
+    y hacia abajo*/
+    line-height: 2;
+    /*el font-wiegth cambia el anchor de las letras*/
+    font-weight: 5000;
+}

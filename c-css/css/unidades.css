@@ -1,0 +1,24 @@
+* {
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.div-form {
+
+    /*
+    de esta primer extiqyeta que tiene 25px dependera la de abajo ya q se ñe asignara 
+    un valor diferente que el de defecto, el valor por defecto de un (em) es de px
+    */
+    font-size: 25px;
+    background-color: #000;
+    /*al darle un view port width (vw) se espedifica el ancho delparrago*/
+    width: 50vw;
+    height: 100vh;
+}
+
+/*.div-form__h2 {
+
+    /*con la propiedad fonnt-size podemos cambiar el tamaño de un texto
+    font-size: 5em
+}*/
