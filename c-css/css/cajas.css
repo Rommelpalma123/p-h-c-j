@@ -1,0 +1,23 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+h2 {
+
+    /*
+    para cambiar el comportamiento de un h2 que funciona en bloque es decir ocupa toda
+    la pantalla, con (display inline) se puede cambiar la caracteristica a una caja en linea 
+    es decir solo ocupara cierta parte de la pantalla  
+    */
+    display: inline;
+}
+
+b {
+    /*
+    tambien a propiedades de caja se le puede dar propiedades de linea es decir que solo 
+    ocupen la parte necesaria
+    */
+    display: block;
+}

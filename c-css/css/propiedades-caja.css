@@ -1,0 +1,67 @@
+* {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+h2 {
+
+    /*con background-color se define el color de fondo de una etiqueta*/
+    background-color: aqua;
+
+    /*con display se puede cambiar las propiedades de linea a caja dependiendo de la etiqueta*/
+    display: inline-block;
+
+    /*con padding-bottom damos a la parte inferior de la caja un ancho
+    padding-bottom: 20px;
+
+    /*con el padding-top damos un ancho a la parte superior de caja
+    padding-top:  20px;
+
+    /*con el padding-left damos un ancho a la parte izquierda de la caja
+    padding-left: 30px;
+
+    /*con el padding-rigth damos un ancho a la parte derecha un ancho
+    padding-right: 30px;*/
+
+
+    /*
+    ahora para reducir tamaño de codigo lo hacemos de la sigiente manera
+    donde hacemos lo mismo que lo anterios 
+    */
+    padding:  80px;
+
+    /*con el  height damos un alto de caja
+    height: 100px;*/
+
+    /*con el width damos un ancho de caja
+    width: 300px;*/
+
+    /*con box-sizing hacemos que la caja se mantenga*/
+    box-sizing: border-box;
+
+    /*con text.aling damos la pocision del texto donde queremos q se posicione*/
+    text-align: center;
+
+    /*margin hace referencia al espacio que existe entre 2 contenedores*/
+    margin: 20px 10px;
+
+    /*con la propiedad border-radius se puede cambiar el borde de una caja*/
+    border-radius: 2em;
+
+    /*
+    con la propiedad border deficimos el tamaño del borde que tipo y el color del
+    borde , aparte reducimos codigo
+    */
+    border: 10px solid blue;
+
+    /*con box-shadow damos un sonvreado a una caja por debajo*/
+    box-shadow: 20px 20px 10px 10px burlywood;
+
+    /*con la propiedad text-shadow le damos un sombreado a nuestro texto dentro de la caja*/
+    text-shadow: 2px 2px 7px blueviolet;
+
+    /*con la propiedad transform podemos rotar el contenido*/
+    transform: rotate(45deg);
+}
