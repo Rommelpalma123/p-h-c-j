@@ -1,0 +1,60 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 30px;}
+
+div {
+
+    height: 200px;
+    width: 200px;
+    background: yellow;
+    display: inline-block;
+}
+
+.caja{
+
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    /*
+    con margin: auto, podemos definir que una caja se centre es decir un valor 
+    definido, especificamente en el centro
+    */
+    margin: auto;
+
+    /*
+    con la propiedad border deficimos el tamaño del borde que tipo y el color del
+    borde , aparte reducimos codigo
+    */
+    border: 12px solid blue;
+
+}
+
+.caja1{
+
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    /*
+    con margin: auto, podemos definir que una caja se centre es decir un valor 
+    definido, especificamente en el centro
+    */
+    margin: auto;
+
+    /*
+    con la propiedad border deficimos el tamaño del borde que tipo y el color del
+    borde , aparte reducimos codigo
+    */
+    border: 12px solid blue;
+}
+
+.caja2{
+
+    /*
+    outline sirve para definir en una caja un tipo de borde con marcado
+    */
+    outline: 5px solid red;
+}
+
+
+

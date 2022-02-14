@@ -63,5 +63,5 @@ h2 {
     text-shadow: 2px 2px 7px blueviolet;
 
     /*con la propiedad transform podemos rotar el contenido*/
-    transform: rotate(45deg);
+    transform: rotate(2deg);
 }
