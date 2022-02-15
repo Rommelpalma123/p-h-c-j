@@ -16,19 +16,70 @@ div {
 .caja{ 
 
     background: red;
+    position: relative;
+
 }
 .caja1{ 
 
     background: green;
+    /*
+    position nos sirve para posicionar un elemento ya que existen varios como:
+    static, relative, absolute, fidex, sticky
+    */
     position: relative;
-    top:  1px;
+    
 
 }
 .caja2{ 
 
     background: pink;
+    position: relative;
+    /*
+    con el top damos una medida a la parte superior de una caja
+    y con el left a la parte izquierda de una caja
+    */
+    top: 60px;
+    left: 20px;
+    /*
+    el z-index, sirve para posicionar un elemento ya sea al frente o atras de 
+    otro elemento
+    */
+    z-index: 10;
 }
 .caja3{ 
 
-    background: gris;
+    background: grey;
+    position: relative;
+    /*
+    el z-index, sirve para posicionar un elemento ya sea al frente o atras de 
+    otro elemento
+    */
+    z-index: 200;
+} 
+.contenedor {
+
+    width: 300px;
+    height: 300px;
+    background: greenyellow;
+    margin: 40px;
+    position: relative;
+    top: 20px;
+}
+
+.hijo {
+
+    background: yellowgreen;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    /*
+    para trabajar con jerarquias en html y css se debe poner solamente 
+    en el elemento hijo se le debe de dar un valor de (z-inde: -1) para 
+    que se pueda posicionar detras de un elemento padre 
+    
+    */
+    z-index: -1;
+
 }
