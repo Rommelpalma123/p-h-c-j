@@ -1,0 +1,24 @@
+* {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+
+body {
+
+    padding-top: 100px;
+}
+.caja-fixed {
+
+    /*
+    position: fixed; este funciona como un elemento que fija una caja aun que est
+    se desplace, lo mantienen firme como una barra de navegacion
+    */
+    position: fixed;
+    margin: -100px;
+    background: yellowgreen;
+}
+
+

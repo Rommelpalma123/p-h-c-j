@@ -1,0 +1,29 @@
+* {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 100;
+}
+div {
+
+    /*
+    cuando se da un (inline-block) a una caja simplemente se ponen en posicion 
+    de horizontal y aparte a esta propiedad se de puede dar un height y un width 
+    cosa que no se puede con inlene simple
+    */
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: yellowgreen;
+    margin: 20px;
+    border: 3px solid violet;
+}
+
+b {
+
+
+    height: 100px;
+    width:  150px;
+    background: paleturquoise;
+    border: 3 solid red;
+    display: inline-block;
+}

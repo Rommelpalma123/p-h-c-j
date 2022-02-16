@@ -1,0 +1,23 @@
+* {
+
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+div {
+
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350pz;
+    border: 1px solid red;
+    background: yellow;
+    /*
+    con overflow podemos denotar en un eje x y y para guardar dentro de un 
+    espacio definido
+    */
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
