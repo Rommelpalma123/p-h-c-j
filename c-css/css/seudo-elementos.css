@@ -1,0 +1,137 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+h2 {
+
+    font-size: 30px;
+}
+
+.texto {
+    padding: 20px;
+}
+
+/*
+el first-line sirve solo para elementos de tipo bloque como block, inline-block 
+menos para elementos en linea
+*/
+.texto::first-line {
+
+    color: greenyellow;
+    font-size:25px;
+}
+
+.texto1 {
+
+    padding: 20px;
+}
+
+/*
+first-letter sirve para remarcar solo la primer letra de un parrafo y tambien
+solo funciona para elementos en bloque, no en linea
+*/
+.texto1::first-letter {
+
+    color: aquamarine;
+    font-size: 50px;
+}
+
+
+.form1 {
+
+    margin: 100px auto;
+    display: block;
+    background: wheat;
+    padding: 30px;
+    width:  50%;
+}
+
+
+.form2 {
+
+    margin: 100px auto;
+    display: block;
+    background: wheat;
+    padding: 30px;
+    width:  50%;
+}
+
+input {
+    padding: 6px;
+    width: 100%;
+}
+
+/*
+el elemento placeholder funciona para elementos de formularios o entradas de 
+texto donde se le puede cambiar el color de fondo y el tamaño dependiendo 
+de lo que se quiera hacer
+*/
+input::placeholder {
+
+    color: aqua;
+    font-size: 30px;
+
+}
+
+/*
+el elemento selection tiene como funcion al momento de seleccioar un texto
+como una entrada(input), se puede cambiar el color de la letra y el fondo
+*/
+input::selection {
+
+    color: brown;
+    background: yellowgreen;
+}
+
+p {
+
+    padding: 6px;
+    width: 100%
+}
+
+p::selection 
+{
+    color: red;
+    background-color: green;
+}
+
+h2::selection {
+
+    color: red;
+    background-color: aqua;
+}
+
+.before1 
+{
+    margin: 100px auto;
+    display: block;
+    background: gold;
+    padding: 30px;
+    width:  50%;
+}
+
+.before 
+{
+    padding: 12px;
+    width: 100%;
+}
+/*
+before funciona para colocar un texto antes de otro texto para completar
+*/
+.before::before {
+
+    content: 'Rommel';
+    color: green;
+}
+
+/*
+after funciona para poner texto despues de otro texto intermedio y es muy 
+aparte del texto intermedio o del before
+*/
+.before::after{
+
+    content: 'como estas?';
+    color: red;
+}
