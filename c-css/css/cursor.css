@@ -1,0 +1,41 @@
+/*cursor pointer*/
+* {
+
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.caja 
+{
+    width: 200px;
+    height: 200px;
+    margin: 45px;
+    border: 3px solid rgb(112, 48, 112);
+    background: rgb(116, 138, 72);
+    /*
+    con la propiedad cursor: pointer se puede cambiar el tocar un elemento del 
+    don es decir podemos cambiar la forma del puntero del mouse
+    */
+    cursor: pointer;
+}
+
+/*cursor de progreso */
+.caja1
+{
+    width: 200px;
+    height: 200px;
+    margin: 45px;
+    border: 3px solid rgb(112, 48, 112);
+    background: rgb(116, 138, 72);
+    cursor: pointer;
+}
+
+/*
+con la propiedad active o seudo clase de cursores se puede dar un forma al 
+cursor haciendo que carge
+*/
+.caja1:active
+{
+    cursor: progress;
+}

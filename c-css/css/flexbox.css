@@ -1,0 +1,121 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100; 
+}
+
+.flex-container
+{ 
+    /*
+    con display: flex podemos hacer que los recuadros sin poner un display:block se ordenen, con display: flex 
+    es mucho mejor por q los separa, aparte de eso flex mantiene el tamaño de las cajas sin importar el texto que este
+    dentro de cada caja
+    */
+    display: flex;
+    text-align: justify;
+    /*
+    el flex-wrap: wrap-reverse es una propiedad que perminte acomodar las cajas de forma reversa cuando 
+    la pantalla del navegador se hace mas pequeña
+    */
+    flex-wrap: wrap-reverse;
+
+    /*
+    la propiedad justify-content: center trabaja como si fuera un text-aling solo que este nos permite dar mas propiedades
+    a nuestras cajas como: 
+    */
+    justify-content: space-evenly;/*space-around, space-between, center, space-evenly, center*/
+
+    height: 100vh;
+    /*
+    esta propiedad align-items permite trbajar con el crross axis y mover de un lado a otro y solo sirve para cajas en una sola linea
+    
+    la propiedad align-content esta trabaja con 2 lienas o mas la cual se adapta a la pantalla 
+
+    align-items: flex-start, flex-end, baseline, stretch
+    align-contend: center, space-around, space-between, basline
+    */
+    align-items: baseline;
+}
+
+.flex-item
+{
+    /*
+    con padding podemos aumentar el tamaño de la caja de cada uno de sus border ya sea top, buttom, left o rigth 
+    */
+    padding: 5px;
+    height: 120px;
+    width: 120px;
+
+    /*
+    con este tipo de background podemos dar un poco mas de vida en colores a botones, cajas entre mas cosas
+    */
+    background: rgb(141, 146, 223);
+    background: linear-gradient(0deg, rgb(53, 61, 165) 0%, rgb(28, 35, 114) 100%);
+    
+    /*
+    con margin podemos dar una separacion entre cajas op cualquier elemento haciendo que se acerquen o se alejen
+    */
+    margin: 15px;
+}
+
+.flex-item:hover {
+    background: rgb(35, 36, 100);
+    background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+}
+
+.orange 
+{
+    background: violet;
+}
+
+.green
+{
+    background: rgb(29, 29, 24);
+}
+
+
+
+
+/*segunda caja*/
+
+
+.caja1
+{
+    background: rgb(141, 146, 223);
+    background: linear-gradient(0deg, rgb(53, 61, 165) 0%, rgb(28, 35, 114) 100%);
+    padding: 5px;
+    height: 100px;
+    width: 120px;
+    margin: 5px;
+    min-width: 200px;
+    text-align: center;
+    
+}
+
+.caja3 
+{
+    background: red;
+    /*
+    con flex-grow las cajas se estiran adaptandose al espacio de la pantalla 
+    */
+    flex-grow: 1 ;
+}
+
+.caja2 
+{
+    background: red;
+    /*
+    con flex-grow las cajas se estiran adaptandose al espacio de la pantalla 
+    */
+    flex-grow: 1 ;    
+}
+
+
+
+
+
+
+
+
+
+
+

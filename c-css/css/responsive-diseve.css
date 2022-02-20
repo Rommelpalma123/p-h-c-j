@@ -1,0 +1,53 @@
+*
+{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+h1
+{
+    font-size: 30px;
+}
+
+
+h2 
+{
+    font-size: 20px;
+}
+
+div 
+{
+    width: 45%;
+    display: inline-block;
+}
+
+.caja 
+{
+    padding: 20px;
+    background-color: #FF5000;
+}
+
+.caja1
+{
+    padding: 20px;
+    background-color: #FFFF53;
+}
+
+/*
+de esta manera con el @media hacemos que la pantalla sea responsiva es
+decir que se adapte a todo tipo de pantalla, especificando un ancho maximo
+*/
+@media only screen and (max-width: 800px)
+{
+    div
+    {
+        display: block;
+        width: 100%;
+    }
+
+    h1
+    {
+        font-size: 20px;
+    }
+}

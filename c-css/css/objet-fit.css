@@ -1,0 +1,120 @@
+*
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 20px; 
+}
+
+.caja 
+{
+    margin: 45px;
+    width: 300px; 
+    height: 300px;
+}
+
+.caja img
+{
+
+    height: 100%;
+    width: 100%;
+    border: 3px solid red;
+    border-radius: 10px;
+    /*
+    la object-fit: contain hace que una imagen se adapte a un marco especifico
+    es decir no ocupa toda la caja
+    */
+    object-fit: contain;
+}
+
+.caja1 
+{
+    margin: 45px;
+    width: 300px; 
+    height: 300px;
+}
+
+.caja1 img
+{
+
+    height: 100%;
+    width: 100%;
+    border: 3px solid red;
+    border-radius: 10px;
+    /*
+    la propiedad object-fit: cover hace que la imagen ocupe toda la caja donde 
+    esta posicionada
+    */
+    object-fit: cover;
+}
+
+
+.caja12
+{
+    margin: 45px;
+    width: 300px; 
+    height: 300px;
+}
+
+.caja2 img
+{
+
+    height: 100%;
+    width: 100%;
+    border: 3px solid red;
+    border-radius: 10px;
+    /*
+    la propiedad object-fit: none simpplemte se adapta a la caja con el 
+    tamaño real de la caja
+    */
+    object-fit: none;
+}
+
+
+.caja3 
+{
+    margin: 45px;
+    width: 300px; 
+    height: 300px;
+}
+
+.caja3 img
+{
+
+    height: 100%;
+    width: 100%;
+    border: 3px solid red;
+    border-radius: 10px;
+    /*
+    la propiedad object-fit: scale-down hace escojer el valor mas çbajo para 
+    adaptarse a la caja
+    */
+    object-fit:scale-down;
+}
+
+
+.caja4 
+{
+    margin: 45px;
+    width: 300px; 
+    height: 300px;
+}
+
+.caja4 img
+{
+
+    height: 100%;
+    width: 100%;
+    border: 3px solid red;
+    border-radius: 10px;
+    /*
+    la propiedad object-fit: cover hace que la imagen ocupe toda la caja donde 
+    esta posicionada
+    */
+    object-fit: cover;
+
+    /*
+    la propiedad object-position denota la posicion de la imagen es decir donde 
+    queremos q se localize si es la left, right, bottom, top y center
+    */
+    object-position: left;
+}

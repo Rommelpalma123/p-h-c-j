@@ -5,9 +5,107 @@
     font-weight: 100;
 }
 
+h2 
+{
+    text-align: center;
+    font-size: 30px;
+}
+
 .caja1 
 {
-    height: 200px;
-    width: 200px;
+    /*con text-align podemos centrar un texto*/
+    text-align: center;
+    height: 50px;
+    width: 150px;
     background: rgb(48, 157, 172);
+
+    /*con berder-radius damos a una caja un tono mas redondo en vez de cuadrado*/
+    border-radius: 1em;
+
+    /*con la propiedad transition damos un tiempo de transition a elementos
+    de la propiedad hover, es decir  hacemos q tome un tiempo en hacer un cambio 
+    cuando se pasa el puntero encima del hover.
+    */
+    transition: all 1s;
+
+    border: 3px solid #ccc;
+
+}
+
+.caja1:hover
+{
+    background:rgb(53, 136, 214);
+    width: 200px;
+    height: 50px;
+    border: 3px solid rgb(128, 199, 36);
+    
+}
+
+/*
+la seudo clase link sirve solo para etiquetas (a) es decir solo para link de 
+redirecciones de paginas
+*/
+.a:link
+{
+    color: rgb(80, 80, 59);
+    display: block;
+}
+
+
+/*
+la seudo-clase visited cambia de color cuando se cliquea un link, al darle 
+click cambia de color por que es un sitio visitado
+*/
+.a:visited
+{
+    color: rgb(64, 75, 224);
+}
+
+.caja2 
+{
+    width: 100px;
+    height: 100px;
+    background: rgb(85, 85, 36);
+    margin: 25px;
+    transition: all 1s;
+}
+
+/*
+el seudo elemento active se una para agramdar o achicar cajas, similar al
+hover
+*/
+.caja2:active 
+{
+    background: rgb(37, 141, 160);
+}
+
+
+input 
+{
+    margin: 25px;
+    background: lightblue;
+    transition: all 1s;
+}
+
+/*
+la seudo-clase clase focus solo funciona para etiquetas de tipo input 
+es deicr al se le puede cambiar el color el tamaño entro otras cosas mas
+*/
+input:focus
+{
+    background: white ;
+}
+
+.caja3 
+{
+    margin: 25px;
+}
+
+/*
+el seudo-elemento lang simplemente se encarga de reconocer un idioma y 
+dependiendo de eso se cambiara el color1
+*/
+caja3 b:lang(en)
+{
+    background:rgb(128, 199, 36)
 }
