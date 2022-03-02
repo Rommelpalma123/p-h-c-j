@@ -1,0 +1,72 @@
+*
+{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+body
+{
+    background: radial-gradient(circle, #fff, #bbb );
+    padding: 20px;
+}
+
+.grid-container
+{
+    /*grid nos sirve para crear varios cuadritos*/
+    display: grid;
+    /*con grid-temlate-rown definimos el numero de filas que se trabajaran*/
+    grid-template-rows: 150px 150px 150px;
+    /*con grid-temlate-columns definimos el numero de columnas a crear*/
+    /*fr simpre se da en las columnas para que sea adaptable a la pantalla*/
+    grid-template-columns: repeat(3, 150px 1fr);
+    border: 3px solid rgb(197, 97, 97);
+
+    /*esta propiedad nos permite separar dentro de un grid los cuadros como si fuera un padding
+    
+    grid-gap: 10px;
+    */
+    
+}
+
+.grid-item
+{
+    border: 2px solid rgb(88, 153, 153);
+}
+
+
+/*con grid child llamamos al primer elemento del html obiamente con su etiqueta*/
+.grid-item:first-child
+{
+
+    /*ahora de esta manera tambien podemos separar nuestros gris por secciones*/
+    background: rgb(121, 77, 77);
+    /*
+    aunque es recomendado utilizar la primer opcion ya q se reduce codigo
+    de esta manera es correcta pero es mas codigo
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    */
+    
+
+                        /****en esta parte para separar grid por secciones se pone por grid-column o row**************/
+    /*el grid-column nos permite separar por secciones las parte de un grid*/
+    /*el grid-row nos permite separar por secciones las parte de un grid*/
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    
+}
+
+/*
+con el nth-child podemos llamar a un segundo elemento de la clase del html, y no se poner second-clied por cuestiones 
+de malas practicas es recomendado el nth-cliel(numero de elemento a llamar)
+*/
+.grid-item:nth-child(2)
+{
+    background: rgb(92, 192, 125);
+    /*con span podemos definir de mejor manera aun grid sin dañar su estructura sin un span*/
+    grid-column: 3 / span 5;
+    grid-row: 1 / span 2;
+}

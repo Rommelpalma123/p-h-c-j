@@ -1,0 +1,191 @@
+* 
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.caja
+{
+    display: flex;
+    height: 100vh;
+    
+    /*
+    con flex-wrap: wrap; hace que la caja sea felxible es decir cuando llega a un tope de pixeles 
+    se desliza con esta propiedad haciendo q bajen las cajas cuando se hace mas pequeña la pantalla
+    */
+    flex-wrap: wrap;
+
+}
+
+.cajas 
+{
+
+    background-color: rgb(146, 75, 75);
+    color: rgb(23, 61, 63);
+    margin: 5px;
+    min-width: 120px;
+    text-align:  center;
+    height: 100px;
+    
+}
+
+.orange 
+{
+    background-color: orange;
+    /*con flex-grow: 1 se ocupa toda la pantalla es decir se adapta a los espacios faltantes*/
+    flex-grow: 1;
+}
+
+.green 
+{
+    background-color: green;
+    /*con flex-grow: 1 se ocupa toda la pantalla es decir se adapta a los espacios faltantes*/
+    flex-grow: 1;
+}
+
+/**/
+.caja1
+{
+    display: flex;
+    height: 100vh;
+    
+    /*
+    con flex-wrap: wrap; hace que la caja sea felxible es decir cuando llega a un tope de pixeles 
+    se desliza con esta propiedad haciendo q bajen las cajas cuando se hace mas pequeña la pantalla
+    */
+    flex-wrap: wrap;
+
+}
+
+.cajas1
+{
+
+    background-color: rgb(146, 75, 75);
+    color: rgb(23, 61, 63);
+    min-width: 120px;
+    text-align:  center;
+    height: 100px;
+    flex-grow: 1;
+    width: 300px;
+    
+}
+
+.orange1
+{
+    background-color: orange;
+    /*
+    con flex-basis podemos definir un tamaño a cajas su uso es similar al de width solo que este tiene mas 
+    prioridad en codigo
+    */
+    flex-basis: 300px;
+    flex-shrink: .5;
+}
+
+.green1 
+{
+    background-color: green;
+    /*con flex-grow: 1 se ocupa toda la pantalla es decir se adapta a los espacios faltantes*/
+    
+}
+
+
+
+
+/**/
+.caja2
+{
+    display: flex;
+    height: 100vh;
+    
+    /*
+    con flex-wrap: wrap; hace que la caja sea felxible es decir cuando llega a un tope de pixeles 
+    se desliza con esta propiedad haciendo q bajen las cajas cuando se hace mas pequeña la pantalla
+    */
+    flex-wrap: wrap;
+
+}
+
+.cajas2
+{
+
+    background-color: rgb(146, 75, 75);
+    color: rgb(23, 61, 63);
+    min-width: 120px;
+    text-align:  center;
+    height: 100px;
+    width: 300px;
+    flex: 1;
+    
+}
+
+.orange2
+{
+    background-color: orange;
+    /*
+    con la propiedad flex podemos reducir codigo de cajas flexibles, dando valores como 
+    flex: flex-grow:1, flex-shrink:0, flex-basis: 350px de como si estubiera de esta manera en el flex: 1 0 350px;
+    y asi reducimos codigo
+    */
+    flex: 1 0 350px;
+    
+}
+
+.green2
+{
+    background-color: green;
+    
+}
+
+/**/
+
+.caja3
+{
+    display: flex;
+    height: 100vh;
+    
+    /*
+    con flex-wrap: wrap; hace que la caja sea felxible es decir cuando llega a un tope de pixeles 
+    se desliza con esta propiedad haciendo q bajen las cajas cuando se hace mas pequeña la pantalla
+    */
+    flex-direction: column;
+
+}
+
+.cajas3
+{
+
+    background-color: rgb(146, 75, 75);
+    color: rgb(23, 61, 63);
+    min-width: 120px;
+    text-align:  center;
+    height: 100px;
+    width: 300px;
+    flex: 1;
+    order: 70;
+    
+}
+
+.orange3
+{
+    background-color: orange;
+    /*
+    con la propiedad flex podemos reducir codigo de cajas flexibles, dando valores como 
+    flex: flex-grow:1, flex-shrink:0, flex-basis: 350px de como si estubiera de esta manera en el flex: 1 0 350px;
+    y asi reducimos codigo
+    */
+    flex: 1 0 350px;
+
+    order: 50;
+    
+}
+
+.green3
+{
+    background-color: green;
+
+    /*
+    order funciona acomodando las cajan en el main axis con el valor mas alto a mas bajo en el eje x,y  es decir toma 
+    el valor mas alto y lo envia al frente
+    */
+    order: 60;
+}

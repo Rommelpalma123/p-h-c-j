@@ -1,0 +1,156 @@
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+body
+{
+    background-color: rgb(116, 99, 99)
+}
+
+.flex-container
+{
+    /*hacemos que cada una de las cajas se adapten*/
+    display: flex;
+
+    /*alineamos todos lo item o input al medio*/
+    align-items: center;
+
+    /*
+    hacemos que al momento de hacer responsiva la pantalla se adapte cuando se hace mas pequeña la pantalla 
+    es decir un input o caja baje uno encima de otro
+    */
+    flex-wrap: wrap;
+
+    /*justifica el contenido*/
+    justify-content: center;
+
+    background-color: rgb(85, 74, 74);
+    margin: 50px 30px;
+    padding: 30px;
+    border: 12px solid rgb(49, 43, 43);
+    outline: 4px solid rgb(92, 80, 80);
+}
+
+.form
+{
+    min-width: 500px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order: 10;
+}
+
+.form-img
+{
+    flex: 1;
+    display: flex;
+    padding: 10px;
+    /*
+    con min-width podemos definir un minimo del tamaño de la caja es decir cuando la pantalla se achique llega 
+    a su minimo y se tira hacia abajo
+    */
+    min-width: 300px;
+    /*
+    con max-width: tambin se puede definir elmaximo de la pantalla para que cuando llege aun maximo se tire 
+    hacia abajo adaptandose a la pantalla
+    */
+    max-width: 400px;
+    order: 1;
+    
+}
+.form-img img 
+{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.form__input
+{
+    padding: 7px;
+    margin: 6px 0;
+    width: 300px;
+    border:  none;
+    border-radius: 3px;
+    border-bottom: 3px solid #6027ca;
+    background: transparent;
+    color: #fff;
+}
+
+
+/*
+focus nos sirve para trabajr con background transparent cuando esta funcion esta activa se puede trabajar con 
+focus que nos permite poner una entrada de input de otro color y de manera mas vistoza al ojo 
+*/
+.form__input:focus
+{
+
+    /*
+    con esta propiedad nos permite poner un color como de sombras al bottom de un input de manera que se ve mas bonito
+    */
+    background: linear-gradient(to bottom, transparent, #333 );
+    outline: none;
+    border-bottom: 3px solid #1784a5;
+}
+
+.form textarea
+{
+    min-height: 140px;
+
+    /*en el texarea la propiedad resize nos permite tener fijo un textarea sin poder agrandarse ni  achicarse*/
+    resize: none;
+}
+
+.img-container
+{
+    margin: auto;
+    
+}
+
+.form-img div
+{
+    padding: 10px;
+
+}
+
+.img-container div 
+{
+    background-color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+.form input[type="submit"]
+{
+    background: #6027ca;
+    border-bottom: none;
+    padding: 10px;
+}
+
+/*llamamos a la propiedad del input que esta en el html con su tipo submit*/
+.form input[type="submit"]:hover
+{
+    background: rgb(116, 55, 177);
+    color: rgb(4, 3, 3);
+    border-bottom: none;
+    padding: 10px;
+}
+
+/*la propiedad focus nos ayuda a dar un tono mas agradable al poner el mouse encima de la caja*/
+.form input[type="submit"]:focus
+{
+    background: rgb(59, 12, 106);
+    color: #333;
+}
+
+
+/* la propiedad active se activa cuando se hace un click en el boton*/
+.form input[type="submit"]:active
+{
+    background: rgb(29, 20, 38);
+    color: #1784a5;
+}
+

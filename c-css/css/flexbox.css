@@ -59,7 +59,7 @@
 
 .flex-item:hover {
     background: rgb(35, 36, 100);
-    background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+    background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%); 
 }
 
 .orange 

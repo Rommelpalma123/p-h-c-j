@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario con flex</title>
+    <link rel="stylesheet" href="./css/formulario-con-flex.css">
+</head>
+<body>
+    <div class="flex-container">
+        <form action="" class="form">
+
+            <div class="form__section">
+                <input type="text" class="form__input" placeholder="nombre">
+            </div>
+    
+            <div class="form__section">
+                <input type="email" class="form__input" placeholder="email">
+            </div>
+    
+            <div class="form__section">
+                <textarea class="form__input" placeholder="asunto"></textarea>
+            </div>
+            
+            <div class="form__section">
+                <input type="submit" class="form__input">
+            </div>
+
+        </form>
+
+        <div class="form-img">
+
+            <div class="img-container">
+
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPsAAADJCAMAAADSHrQyAAAAdVBMVEX///8TExMAAADb29sUFBTg4OAPDw8NDQ0FBQUJCQnd3d2ysrK1tbXr6+vX19etra2np6fm5uagoKCpqakeHh7u7u66urojIyMkJCQpKSnR0dH09PSampoZGRnAwMA3NzfHx8dZWVlcXFxBQUF6enpwcHBkZGRbSK5JAAAILElEQVR4nO2d63raOBCG0TDIMjnSkqZNlqbddnv/l7iWIXhGls+SrDyd72cCtl5GmpNk2GxEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCRaqtfd9iNo9xqe/K2Aj6HyLTT9Z9BaK52j3FHBQ2D2eyjUx1AB28DsmxsocG2sMSrhNjT6BR7z5kelY6BvNre5Wx4t+pcY6JvNl+zXvIbvIYGffhwIvF6brkdYubkGfff9bjH7G5h7Ap+r5a0jolZ/AXhbiv4KaMoGPltvjza4NW7uxRiEpTnODmzYaCLmTTXt86Sn6PdgFMJuOTtW8HsGn6M4elnZJwS7Ugw+yzWP1M1dctBA7NWlKbzObtZz9PP4ArFbyzNvnxl8wTz8ZV4GY0dTNPC5ZXgFyeZeTHn5azB2pSj8w/mzzeIDQDe4vf8jILsyZM0/1GsqB3asCvab67jOHv6skOzM299m4u0R6YSv0Jt/BWVX3NvnsOZRtYPb+7DCsiPtieRQ2CDL4Z3eUlh2u+Yb+NsM4jzz8GStW4VmV0azwiYlpyu085B4+NJwUwRnV6Zk3n5VX18wD2+DGx1NeHYsyTUfVl3ztDe3pR7+rPDsFt4JdWs0MJGvdV8LPQI7D3UrObw2ensUUdixzMDbOx7e84oo7Dy3X6ewoc3oe2N8CXYcdqxCXWP5urBJjM88fGm8r4lkd19hk1K8fDH+u0djd3p4RULDIzq9uY7XxWNfrapD5ua2rHxhisjuwKfL8DRD77J6XHY0JQt1KeBbcb3svmlM9gpe802LFKKJ7H3R4eZqRWS3dzVFA/85ieVZcDP+4HZRZHY0rLCJ7/Aoet9at4o655VT2NzELmy6e3M+xWa3lmhuETXUOW5uO5hKx2dHN9TFU9vqvfTx2ZVK5e1Z+VL2BLeLUrCjUbyNFV6Wk3n4otfDn5WCvYI3DXysUEePS267yhemJOw8vY3RwLTlCwtuY26QiF3RBmb4Nc+3G7cjo0kqdta9vQ1e0rYrtxFKxW4Lm3hncvSUlOaqZOxVqFO0jRUS3ilfxr4tIbsCxb19KBXEw9+X3rakfzwJ2VlhEwze8fBmfL2Qkt0tbDQu9XjoePjxa90qKXvwUOfstI6M6+9KzB78BGbRv93Yq9TsKmxuz3ZaextUHiVnVwbDpLf2fWwLQo8ObhelZ1dQNPd8XGR5Gty2ZqLVV2F3tquKuU0st3yZfIE12JF7+7ltrLaHn/ghrsHeDnVzLF+M3H3p1jrs1bRvnteYE+r4c26vMNXN1VqJHR7JJWZsUSN/xG9egrzKetfwiV1jqrdH5uHnXKHWGuwu+vShtx9lngO/ArtmE/6sOsMbOfF5+cKukDu7hs+ey0yBp+iv5ApTjzQlZ6fodzhno5LFdX0gV5ho+dTsdMIfjjCjsOHlC5zmwyft23APf/cMCKep8LR82VZVIRwb+ImhLiF7/TDuPw36yb4TdDOATyOGznZf6t4c4IFdYfyiTzrnmdUN1KPkhxN0X2FTz5v27gsAt3yW/Tq61t/R0YXvHXr7ULitYCj8lDWfjh0p+hPZLDSjhn7eaW3Q9035ggbuRlxhLXZ0rH6i7zIFt7zf9Lx84a0KuubHZwrJ7E7X+uErexMCi/MdF0DHw/PHfuZ4+1R2Zx6eoVsGOA23sZiHV85dkcKPiRcJ2ZmHx9YjNmhKBu+ZshR93zo3h1WwnAyfhp2hl753ONtVDjw65+Z8rQrjhLrhNZ+Enbm5wvsGdOM8GTq299x8lzDlgV8hB3YW3LzPMNTHT6Fr6MgS2X1ng2pqqEvBTq3+DD57nDM8dELdVczD684+PE709gnY6Vr/2v1qZN7+MnQ8oxM3p/rakvDcwA93cuKy1/GrCW5Px94PisX5T1d4hq6986bBOd7RK/Sv+eh2p1b3uzkCTx3eY71jg9POzSEYbvm+l0dmZx6+suuQ820XNtoNbkPwBV3zvb2guOzMww9Z3QNvxTz8iDzdlM207y9p47GjU7mdxiW/tJnx8vPnvy8Nuvv8ehcScvhO+ph21yM9vDOik39Ie+x3c1ch9fbtHDEJu1u+jBm5W9gw9FHkNdS4wiYeu3aC2/g+mlGH1m32Hc+0+oQIJxbqkrKjM+H1tEY2kMMJZ/nLl54rlCzUpXweVvNm9Dg314iVtDW6GQxujgwOr/lIc56iPw3kYl54OLB7TN9fByfUJWNnVj9ORrfwJL3dq8nHiKy3Pw3l9nHYeXCbdZYIju8j2+OsUxU4WNgEZ3fLl+dZ5zKI3XbTl8w727Hf20ewO4vrswduHyS2Od3L9HNzDVzRW9iEZ3c8/NzDc8qexvr1+9ei78qgffvHVmETmB25h58a3BxpA2bZN2X05vZB2d2Upr9VkUQ0w3MdXug5P6t8iSl4pvD8X2HtTj38tyk5fCxVQ/pGvT39X1B2p3xZn9yKJTks1IVkX5TDR5R7MuP692DsrHwZ6MgmFq3nSVUXjt0JbnlM+ItA+bx9MHaG7t99WU/oTW8DsJ8xKfq3zNArwdfWpkWI794/P7RDPHwWcd1Ve8cm0O8OMPTM1vpFCMo9hxdkvbunJdfm9Anb3dvF7K+AWbu5q7AV6hb/zsimgGzjuite2AAuRd8c/mu+7Nrm8DmLevsfv9u7AAuUOzqv6oJqdm8unViS83ehKx7ngymPVsWwaOs6lHKp1wcFp9DoO1jlN0AnS2nd2ulcrD8r/+zreP0JjV5lePu1f/J3lHZP4dFFIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSPTX6X9+05ZOOgYGbgAAAABJRU5ErkJggg==" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
