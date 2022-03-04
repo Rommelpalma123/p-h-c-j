@@ -1,0 +1,128 @@
+* 
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+body
+{
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+
+
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 3px solid #cc4;
+    background-color: #999;
+    grid-auto-flow: dense;
+
+    /*con justify-items podemos justificar elementos de un grid horizantalmente*/
+    /*
+    justify-items: center;
+    center, stretch, start, end
+    */
+
+    /*
+    con aling-items podemos alinear los elementos que tiene un grid es decir podemos center, start, end, stretch
+    */
+    /*
+    align-items: center;
+    center, stretch, start, end
+    */
+    align-items: center;
+    justify-items: center;
+
+    /* justify-content y align-content nos permite centrar elementos de un gris y de muchas mas cosas*/
+    align-content: center;/*space-around, space-between, space-evenly, center*/
+    justify-content: center;/*space-around, space-between, space-evenly, center*/
+    height: 600px;
+    
+}
+
+.grid-item
+{
+    background-color: #167;
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 30px;
+    padding: 50px;
+    
+}
+
+
+.grid-item:first-child
+{
+    /*
+    el aling-self permite cambiar la posicion de un elemento del grid es decir lo puedo poner verticalmente
+    center, end, start
+    */
+    align-self: start;
+    /*con justify-self podemos modificar elementos del grid de anera horinzontal */
+    justify-self: start;
+    border: 3px solid #444;
+}
+
+.grid-item:first-child:hover
+{
+background: #568;
+cursor: pointer;
+}
+
+.grid-item:first-child:active
+{
+background: rgb(59, 102, 189);
+cursor: pointer;
+}
+
+
+.grid-item:nth-child(7)
+{
+    justify-self: left;
+    align-self: end;
+}
+
+.grid-item:nth-child(9)
+{
+    justify-self: right;
+    align-self: end;
+}
+
+.grid-item:nth-child(8)
+{
+    justify-self: center;
+    align-self: end;
+}
+
+.grid-item:nth-child(3)
+{
+    justify-self: right;
+    align-self: start;
+}
+
+.grid-item:nth-child(2)
+{
+    /*
+    place-self remplaza a justify-self y aling-selt con solo una linea de codigo y solo se le debe
+    de dar los valores de inicio
+    */
+    place-self: start center;
+    
+    /*
+    justify-self: center;
+    align-self: start;
+    */
+}
+
+.grid-item:nth-child(5)
+{
+    justify-self: center;
+    align-self: center;
+    background: #669;
+}
