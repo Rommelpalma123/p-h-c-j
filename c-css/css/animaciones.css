@@ -1,0 +1,64 @@
+*{
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container 
+{
+    padding: 20px 5px;
+    background: #2ff;
+}
+
+.caja
+{
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    background: #f6f;
+    /*con animation-name llamanos al nombre de la animacion creada para dar animacion*/
+    animation-name: animacion1;
+    /*con animation-duration podemos definir el tiempo que dure la animacion*/
+    animation-duration: 1s;
+    position: relative;
+    /*con esta propoeadad podemos definir el numero de veces que se desea mover la animacion*/
+    animation-iteration-count: infinite;
+    /*con esta propiedad podemos hacer mover de reversa y para amboslados a una animacion*/
+    /*
+    alternate-reverse, reverse, normal, alternate
+    */
+    animation-direction: alternate-reverse;
+    border-radius: 100%;
+    /*son los tipos de animaciones que hay
+    forwards, both
+    forwards: este trbaja con los estilos y se posiciona desde principio a fin es decir qudara en el fin 
+    both: este trabaja con los animation-delay dando a notar los valores definidos en tiempo real sin retardos
+    */
+    animation-fill-mode: forwards;
+    
+    /*con esta propiedad podemos dar mas animaciones con curvas para q se vea mucho mas dinamico*/
+    animation-timing-function: cubic-bezier(0.72, -0.48, 0.18, 1.39);
+}
+
+/*con keyframes podemos hacer animaciones*/
+@keyframes animacion1
+{
+    /*
+    en animaciones podemos trabjar con propiedades como from y to 
+    pero tambien podemos trabajar con porcentajes para una mejor manera de trabajo y mucho mejor
+    */
+    0%
+    {
+        background: #251;
+        left: 0;
+    }
+
+    50%
+    {
+        background: rgb(40, 63, 63);
+    }
+    100%
+    {
+        left: 80%;
+        background: #2f3;
+    }
+}

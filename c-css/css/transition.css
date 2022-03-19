@@ -1,0 +1,67 @@
+*
+{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.container
+{
+    height: 400px;
+    background: #ff6;
+    padding: 20px 5px;
+}
+
+.caja
+{
+
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    background:rgb(181, 143, 118);
+    /*con transition-property podemos definir la propiedad a la cual le queremos dar una transiccion en 
+    este caso sera al background*/
+    transition-property: left background;
+    /*con transition-duration definimos el tiempo que va a demorar la transaicion en mostrarse en este caso se
+    esta haciendo a un background que cambie de color despues de 2s*/
+    transition-duration: 2s;
+    /*con transition-delay hacemos que despues de un tiempo definido se muestre un cambio por 
+    ejemplo en un hover
+    transition-delay: 2s;
+    */
+    position: relative;
+    left: 0;
+    
+}
+
+.container:hover > .caja 
+{
+    left: 80%;
+    background: #1f5;
+}
+
+
+.caja:first-child
+{
+    transition-timing-function: linear;
+}
+
+.caja:nth-child(2)
+{
+    transition-timing-function: ease;
+}
+
+.caja:nth-child(3)
+{
+    transition-timing-function: ease-out;
+}
+
+.caja:nth-child(4)
+{
+    transition-timing-function: ease-in;
+}
+
+.caja:nth-child(5)
+{
+    transition-timing-function: ease-in-out;
+}

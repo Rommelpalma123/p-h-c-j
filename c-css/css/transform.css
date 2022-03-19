@@ -1,0 +1,35 @@
+*{
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container 
+{
+    padding: 20px 5px;
+    background: #2ff;
+}
+
+.caja
+{
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    background: #f6f;
+    color: #000;
+    display: flex;
+    /*SHORTAHN CON ESTE PODEMOS TRABAJAR CON EL EJE X, Y*/
+    transform: transform 1s;
+}
+
+.caja:hover
+{
+    /*con esta propiedad skew podemos hacer q una caja se rote unos grados mas
+    traslate funciona para mover de un lugar a otro
+    */
+    transform: skew(30deg) translate(60px)
+}
+
+b
+{
+    margin: auto;
+}
