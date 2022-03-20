@@ -1,0 +1,98 @@
+*
+{
+    font-family: "Helvetica Neue";
+    font-weight: 100;
+}
+
+img
+{
+    height: 200px;
+    width: 200px;
+}
+div
+{
+    display: inline-block;
+    margin: 10px;
+}
+
+.container
+{
+    /*con esta propiedad podemos dar opacidad a una imagen*/
+    filter: blur(2px);
+}
+.container1
+{
+    /*con esta propiedad podemos da un brillo a la imagen*/
+    filter: brightness(1.1)
+}
+.container2
+{
+    filter: contrast(1.5)
+}
+.container3
+{
+    /*con esta propiedad podemos hacer que se haga un marcado por debajo de la imagen y los lados*/
+    filter: drop-shadow(0px 0px 50px #080)
+}
+.container4
+{
+    /*hace que el color se torne gris*/
+    filter: grayscale(1)
+}
+.container5
+{
+    /*con esta propiedad podemos hacer que los colores se tornen de otra manera y solo funciona con los
+    grados no con pixeles
+    */
+    filter: hue-rotate(100deg)
+}
+.container6
+{
+    /*con esta propiedad solo invertimos los colores*/
+    filter: invert(100%);
+}
+.container7
+{
+    /*con esta propiedad se le puede dar un realce a los colores de una imagen*/
+    filter: saturate(400%)
+}
+.container8
+{
+    /*invierte color a sepia*/
+    filter: sepia(1)
+}
+
+
+.container-padre 
+{    
+    filter: contrast(30);
+    background-color: #fff
+}
+
+.caja
+{
+    display: inline-block;
+    width: 150px; 
+    height: 150px;
+    background: #288;
+    border-radius: 50%;
+    margin: 40px;
+    filter: blur(20px)
+}
+
+.caja:first-child
+{
+    animation: trasladar 3s alternate infinite;
+}
+
+@keyframes trasladar {
+
+    0%
+    {
+        transform: translate(0);
+    }
+    100%
+    {
+        transform: translate(100px);
+    }
+}

@@ -1,0 +1,33 @@
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.container 
+{
+    border:6px solid #4f5 transparent;
+    padding: 20px 5px;
+    margin: 40px;
+    width: 400px;
+    height: 200px;
+    background: #147;
+    background-image: url(https://siaguanta.com/wp-content/uploads/2020/05/que-es-wallpaper1.jpg);
+    /*con esta propiedad damos un tmaaño a la imagen para que se adapte a la caja, podemos dar medidas como px*/
+    background-size: cover;
+    /*con esta propiedad podemos hacer que una imagen no se repita mas de una vez*/
+    background-repeat: no-repeat;
+    /*
+    con esta propiedad podemos hacer que la imagen se vea desde los bordes
+    background-clip: border-box;
+    con esta propiedad podemos hacer que la imagen no se recorte si no que se ajuste
+    background-origin: border-box;
+
+    con esta propiedad podemos hacer que una imagen se posicione en diferentes marcos de la caja
+    background-position: left right;
+        */
+    /*con esta propiedad podemos dejar una imagen estatica de fondo y que solo se mueva lo demas*/
+    background-attachment: fixed;    
+    
+}

@@ -1,0 +1,43 @@
+/*con el scroll podemos hacer q al llamar esta propiedad se diriga a ella de manera mas despacio
+no de golpe*/
+*{ font-size: 20px; scroll-behavior: smooth; user-select: none;}
+
+h2
+{
+    color: #033390;
+    font-size: 30px;
+}
+.direcction
+{
+    direction: rtl;
+    background: #f255;
+    padding: 12px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.letter
+{
+    font-size: 30px;
+    padding: 12px;
+    letter-spacing: 20px;
+    color: white;
+    background: rgb(145, 88, 145)
+}
+
+a
+{
+    text-decoration: none;
+    color: #028;
+    font-size: 30px;
+    background: red;
+}
+#scroll
+{
+    background: #0369;
+}
+
+.no-select
+{
+    user-select: none;
+}

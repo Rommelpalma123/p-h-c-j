@@ -1,0 +1,32 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+/*con root podemos crear variables para trabajr con las etiquetas y dar estilos*/
+:root
+{
+    /*le podemos dar cualquier nombre despues de -- y su respectivo color*/
+    --color-azul: #128;
+    --color-verde: #171;
+}
+
+div
+{
+    margin: 30px;
+    padding: 30px;
+    height: 100px;
+    width: 100px;
+}
+
+.container
+{
+
+    /*aqui llamos a la variable que creamos antes con su respectivo contenido*/
+    background: var(--color-verde);
+}
+
+.container-2
+{
+    background: var(--color-azul);
+}
