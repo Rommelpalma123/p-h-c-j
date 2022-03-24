@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header, .main, .footer, aside
+{
+    background: #fff;
+    width: 100%;
+    margin: 5px 5px;
+}     
+
+.lista
+{
+    text-decoration: none;
+    color:#000;
+    border: 2px solid #f34f;
+    border-radius: 3px;
+    background: #fff;
+    font-size: 16px;
+}  
+
+.lista:hover
+{
+    background: #f34f;
+}
+
+
+.lista-li
+{
+    display: inline;
+    margin: 30px;
+}
+
+img
+{
+    width: 10%;
+    height: 10%;
+}
+
+.logotipo img
+{
+    border-radius: 12%;
+    border: 2px solid #756;
+    filter: contrast(2);
+}
+
+.logotipo
+{
+    background: #126756;
+}
+
+.listas
+{
+    background: #126756;
+    padding: 12px;
+}
+
+.main .articules
+{
+    width: 68.5%;
+    margin-right: 1.5%;
+    float: left;
+    background: wheat;
+}
+
+aside
+{
+    
+    width: 24%;
+    background: rgb(63, 63, 33);
+    float: left;
+    box-sizing: border-box;
+
+}
+
+
+.main, .articules, article
+{
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+}
+
+footer p
+{
+    background: #126756;
+    width: 100%;
+    color: #000;
+    clear: both;
+    padding: 20px;
+}
+
+footer ol li
+{
+    display: block;
+    color: black;
+    padding: 3px;
+    background: yellowgreen;
+
+}
