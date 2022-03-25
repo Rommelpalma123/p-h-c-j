@@ -1,0 +1,24 @@
+*{ font-size: 20px;}
+
+.margen
+{
+    background: yellowgreen;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: 2px outset #1c45;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    user-select: none;
+    /*el outline esta mas afuera que el border */
+    outline: 3px solid #1c65
+}
+
+.text
+{
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 3px 5px blue;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+}

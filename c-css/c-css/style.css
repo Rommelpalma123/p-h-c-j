@@ -1,90 +1,36 @@
 *{ font-size: 20px; margin: 0px; padding: 0px; }
-/*
-dotted, dashed, solid, double, 
-*/
-/*propieades para botones outset*/
-.boton {
-    border: 6px #4cc outset;
-    color: #c3c;
-    padding: 12px;
-    margin: 12px;
-    background: #3ff;
-}
 
 p
 {
     margin: 12px;
     color: #000;
 }
+/*
+dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden
+*/
+/*propieades para botones outset*/
 
+.boton { border: 6px #4cc outset; color: #c3c; padding: 12px; margin: 12px; background: #3ff; width: 80%; }
 
-.boton {
-    border: 6px #4cc outset;
-    color: #c3c;
-    padding: 12px;
-    margin: 12px;
-    background: #3ff;
+.boton1 { border: 6px #4cc dotted;color: #c3c;padding: 12px;margin: 12px;background: #3ff;width: 80%; }
+
+.boton2 { width: 80%; border: 6px #4cc dashed;color: #c3c;padding: 12px;margin: 12px;background: #3ff; }
+
+.boton3 { width: 80%;border: 6px #4cc solid;color: #c3c;padding: 12px;margin: 12px;background: #3ff; } 
+
+.boton4 { border: 6px #4cc double;color: #c3c;padding: 12px;width: 80%;margin: 12px;    background: #3ff; }
+
+.boton5 { width: 80%;border: 6px #4cc groove;color: #c3c;padding: 12px; margin: 12px; background: #3ff; }
+
+.boton6  { border: 6px #4cc ridge;color: #c3c;width: 80%; padding: 12px; margin: 12px; background: #3ff; }
+
+.boton7 { width: 80%;border: 6px #4cc inset;color: #c3c;padding: 12px;margin: 12px; background: #3ff; }
+
+.boton7 { width: 80%;border: 6px #4cc hidden;color: #c3c;padding: 12px; margin: 12px;background: #3ff; }
+
+.boton8 { border: 6px #4cc none;color: #c3c;padding: 12px; margin: 12px; background: #3ff; width: 80%; }
+
+.boton9 { border-style:outset; border-color: chartreuse; border-radius: 12px; border-width: 3px; width: 80%; background: chartreuse;
+padding: 10px; margin: 10px;
 }
 
-
-
-.boton {
-    border: 6px #4cc outset;
-    color: #c3c;
-    padding: 12px;
-    margin: 12px;
-    background: #3ff;
-}
-
-
-.boton {
-    border: 6px #4cc outset;
-    color: #c3c;
-    padding: 12px;
-    margin: 12px;
-    background: #3ff;
-}
-
-.boton {
-    border: 6px #4cc outset;
-    color: #c3c;
-    padding: 12px;
-    margin: 12px;
-    background: #3ff;
-}
-
-
-.boton {
-    border: 6px #4cc outset;
-    color: #c3c;
-    padding: 12px;
-    margin: 12px;
-    background: #3ff;
-}
-
-
-.boton {
-    border: 6px #4cc outset;
-    color: #c3c;
-    padding: 12px;
-    margin: 12px;
-    background: #3ff;
-}
-
-
-.boton {
-    border: 6px #4cc outset;
-    color: #c3c;
-    padding: 12px;
-    margin: 12px;
-    background: #3ff;
-}
-
-
-.boton {
-    border: 6px #4cc outset;
-    color: #c3c;
-    padding: 12px;
-    margin: 12px;
-    background: #3ff;
-}
