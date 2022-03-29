@@ -1,0 +1,88 @@
+html
+{
+    font-family: 'Montserrat', sans-serif;
+}
+body { margin: 0; background-color: #efefef; }
+
+header
+{
+    background: rgb(46, 45, 45);
+    color: white;
+    padding: 3rem 2rem;
+}
+header:hover{ color:rgb(223, 127, 127); border-bottom: 3px solid #f90; cursor: pointer; }
+
+header h1 { font-size: 3rem; text-align: center; }
+
+.container { width: 400px; margin: 0 auto; }
+
+section article
+{
+    transition: box-shadow 0.3s ease;
+    background: #fff;
+    margin: 1rem 0;
+    padding: 0.25rem 0;
+    border-radius: 0.5rem;
+    cursor: pointer;    
+}
+
+section article:hover { box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.3); }
+
+section article h2, section article p { margin: 1rem; }
+
+footer { background: #221; padding: 3rem; color: #fff; }
+
+footer section { float: right; }
+
+footer p { margin-top: 0; margin-bottom: 0; }
+
+footer a{ text-decoration: none; color: #efefef; margin: 5px; transition: color 0.3s ease;} 
+
+footer a:hover{ color: #cc2; } 
+
+footer a:visited{ color: #c22; } 
+
+table 
+{   
+
+    margin: 12px;
+    width: 96%;
+    margin-left: 1px;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+th, td
+{
+    border: 2px inset #c5c;
+    padding: 5px;
+}
+
+th { background-color: rgb(181, 30, 47); color: rgb(254, 255, 255); text-align: left; }
+
+
+tr:nth-child(even)
+{
+    background: #9c9;
+}
+
+tr:hover
+{
+    background-color: rgb(255, 255, 255);
+}
+
+img
+{
+    background-size: cover;
+}
+
+.box
+{
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+    padding: auto 12px;
+    background: #f3f;
+    padding: 3px;
+}
+

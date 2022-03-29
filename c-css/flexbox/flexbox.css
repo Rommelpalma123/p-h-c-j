@@ -1,0 +1,36 @@
+/* *, *::after, *::before { box-sizing: border-box;} */
+
+*{ margin: 0; padding: 0;}
+
+.container 
+{
+    background-color: #333;
+    height: 30vh;
+    display: flex; /*flex | block | inline-flex | inline-block*/
+    flex-direction: row; /* row | row-reverse | column | column-reverse */
+    flex-wrap: wrap; /* wrap | wrap-reverse | nowrap */
+    /*con flex-flow podemos acortar a flex-direction y flex-wrap solo dando un valor a cada uno
+    
+    flex-flow: row-reverse wrap-reverse
+    */
+    justify-content: flex-start;/*flex-start | flex-end | center | space-between | space-around | space-evenly
+    start | end | left | right ... + safe | unsafe;
+    */
+
+    align-items: center;
+    /* align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline
+    start | end | self-start | self-end + ... safe | unsafe;*/
+    align-content: center;
+    /*align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch
+    start | end | baseline | first baseline | last baseline + ... safe | unsafe;*/
+    
+}
+
+.item
+{
+    width: 20%;
+    height: 20%;    
+    border: 1px solid #999;
+    background-color: aqua;
+    box-sizing: border-box;
+}

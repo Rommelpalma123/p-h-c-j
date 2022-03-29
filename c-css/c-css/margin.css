@@ -7,7 +7,8 @@
     padding: 30px 15px 5px;
     border: 2px outset #1c45;
     height: 100px;
-    width: 50px;
+    width: 100px;
+    /*hacemnos que el texto sehubique en cajas paa q entre todo*/
     overflow: scroll;
     user-select: none;
     /*el outline esta mas afuera que el border */
@@ -22,3 +23,50 @@
     user-select: none;
     font-family: 'Roboto', sans-serif;
 }
+
+a:link
+{
+    background-color: #1c45;
+    color:aqua;
+}
+
+/*cuando entramos a un link este se marcara de otro color al ser visitado*/
+a:visited
+{
+    background: yellowgreen;
+    color: red;
+    margin: 12px;
+}
+
+ul
+{
+    background: #885;
+    /*quitamos los puntos de una lista*/
+    list-style-type: none;
+    /*receteamos el valor por defecto del padding que tiene una lista*/
+    padding-left: 0;
+
+}
+
+table {
+    width: 90%;
+    /*hacemos que la tabla se acomedo al contenido sin ropturas*/
+    border-collapse: collapse;
+}
+
+th, td 
+{
+    border: 1px inset #c5c;
+    padding: 5px;
+}
+
+th { background-color: rgb(181, 30, 47); color: rgb(254, 255, 255); text-align: left; }
+
+/*con even decirmos que seleccione los elementos de una tabla de manera impar saltando de uno a otro*/
+tr:nth-child(even)
+{
+    background: #cccccc;
+}
+
+tr:hover { background: rgb(140, 160, 101); cursor: pointer; }
+
