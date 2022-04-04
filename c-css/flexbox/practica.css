@@ -1,0 +1,136 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main
+{
+    flex-grow: 1;
+}
+.titulares
+{
+    background: #f96;
+    color: #fff;
+    padding: 16px;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu ul
+{
+    list-style-type: none;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    color: #199;
+}
+
+.hero-image div
+{
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-image h2
+{
+    font-size: 4vw;
+}
+.hero-image
+{
+    min-height: 100vh;
+    background-image: url("https://placeimg.com/1280/720/animals");
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    color: #fff;    
+}
+
+img
+{
+    height: auto;
+    max-width: 100%;
+}
+
+.flex-responsive 
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-responsive-item
+{
+    border: 1px outset #999;
+    flex: 1 1 200px;
+    padding: 6px;
+}
+
+
+@media screen and (min-width: 1024px)
+{
+    .header
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu ul
+    {
+        display: flex;
+    }
+    .menu li 
+    {
+        padding: .5rem;
+    }
+    .menu ul li a
+    {
+        text-decoration: none;
+        color: #fff;
+    }
+    /*seccion de pagina de practica*/
+    .flex-container
+    {
+        display: flex;
+        align-items: center;
+    }
+    .flex-item
+    {
+        flex: 0 0 50%;
+    }
+    .flex-order-1
+    {
+        order: 1;
+    }
+    .flex-row-reverse
+    {
+        flex-direction: row-reverse;
+    }
+    p
+    {
+        text-align: justify;
+    };
+}
+
+
+@media screen and (min-width: 768px) 
+{
+
+}

@@ -1,14 +1,15 @@
-/* *, *::after, *::before { box-sizing: border-box;} */
-
 *{ margin: 0; padding: 0;}
 
 .container 
 {
     background-color: #333;
-    height: 30vh;
+    width: 100%;
+    height: 400px;
     display: flex; /*flex | block | inline-flex | inline-block*/
-    flex-direction: row; /* row | row-reverse | column | column-reverse */
-    flex-wrap: wrap; /* wrap | wrap-reverse | nowrap */
+
+    /*flex-direction: row; /* row | row-reverse | column | column-reverse */
+    /*flex-wrap: wrap;  wrap | wrap-reverse | nowrap */ 
+    flex-flow: row nowrap;
     /*con flex-flow podemos acortar a flex-direction y flex-wrap solo dando un valor a cada uno
     
     flex-flow: row-reverse wrap-reverse
@@ -17,10 +18,10 @@
     start | end | left | right ... + safe | unsafe;
     */
 
-    align-items: center;
+    align-items: stretch;
     /* align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline
     start | end | self-start | self-end + ... safe | unsafe;*/
-    align-content: center;
+    align-content: flex-start;
     /*align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch
     start | end | baseline | first baseline | last baseline + ... safe | unsafe;*/
     
@@ -28,9 +29,41 @@
 
 .item
 {
-    width: 20%;
-    height: 20%;    
-    border: 1px solid #999;
+    /* width: 20%; */
+    /* height: 20%;     */
+    border: 2px solid #999;
     background-color: aqua;
+    /* text-align: center; */
     box-sizing: border-box;
+    /*flex-grow sirve para el crecimientos de los hijos donde se ajustan al contenido*/
+    flex-grow: 0;
+    /*
+    flex-shrink sirve para el ajuste cuando un contenedor se hace mucho mas queqeuño de lo 
+    normal en ese caso entra esta propiedad para ajustar el texto a la caja
+    */
+    flex-shrink: 1;
+    /*
+    flex-basis hace que se ajuste una propiedad ya sea para filas en su alto y para columnas su ancho
+    */
+    flex-basis: 100px;
+    /*shorthand para flex-grow, flex-shrink y flex-basis */
+    flex: 1 2 100px; 
+    /*la propiedad border representara el orden de los hijos dentro de la caja*/
+    order:1;
+    /*
+    aling-self nos permite cambiar las propiedades de los hijos es decir sobreescribe el 
+    valor de align-items
+    */
+    /*align-items: stretch | flex-start | flex-end | center | baseline | first baseline */
+    align-self: auto;
+}
+
+.item:nth-child(2)
+{
+    order:10;
+}
+
+.item:nth-child(3)
+{
+    align-self: center;
 }
