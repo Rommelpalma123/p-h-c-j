@@ -17,7 +17,8 @@ body
 header
 {
     padding: 25px;
-    background: rgb(139, 62, 24);
+    background: rgb(155, 98, 69);
+    
 }
 
 header ol
@@ -27,7 +28,6 @@ header ol
 
 header li 
 {
-    
     font-size: 25px;
     padding: 1rem;
     list-style-type: none;
@@ -39,19 +39,46 @@ header a
     text-decoration: none;
 }
 /* estilo para el main */
+seccion
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+h2 
+{
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
 
 main
 {
     flex-grow: 1;
 }
 
+.img
+{
+    background-image: url("../../c-html/media/1.jpeg");
+    background-color: inherit;
+    background-repeat: no-repeat;
+    width: 300px;
+    filter: blur(1px);
+    height: 200px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+
+}
 .article
 {
+    cursor: pointer;
     height: 300px;
     width: 600px;
-    background: red;
-    margin: 3px ;
+    background: #fcc;
+    margin: 9px;
 }
+
+
 /* estilo de pie de pagina */
 footer
 {
@@ -64,6 +91,25 @@ footer li
     list-style-type: none;
     color:aliceblue;
     padding-left: 0;
+}
+
+footer a
+{
+    text-decoration: none;  
+    color: #fff;
+    font-size: 20px;
+}
+
+p
+{
+    width: 90%;
+    margin: 0 auto;
+    padding: 3px;
+    font-size: 15px;
+    text-align: justify;
+    text-shadow: 0rem 0px .1rem;
+    color: rgb(0, 0, 0)
+
 }
 
 /* responsive desing*/
