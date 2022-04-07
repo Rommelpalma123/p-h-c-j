@@ -138,5 +138,41 @@ p
 
 /* responsive */
 
-@media screen and (min-width: 768px){
+@media (min-width:375px) and (max-width:850px){
+
+    .container {
+        display: flex;
+        flex-direction:column;
+        margin: 20px auto;
+        width: auto;
+    }
+    p
+    {
+        font-size: 20px;
+        text-align: justify;
+    }
+    .card{
+        margin: .5px;
+    }
+    .card1 {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .card3 {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .box input {
+        margin-top: 110px;
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 20px;
+        width: 130px;
+        border: none;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    
 }
